@@ -3,7 +3,7 @@ package com.lectures.lecture06;
 public class MainLecture06 {
 
     public static void main(String[] args) {
-//        checkYoungPeopleRights(21);
+        checkYoungPeopleRights(21);
         getMonthNumberOfDays(1, 2016);
 
     }
@@ -40,7 +40,7 @@ public class MainLecture06 {
 
         if (age < 18) {
             System.out.println("Person is under 18, so nothing allowed");
-        } else if (age >= 18 || age < 21) {
+        } else if (age >= 18 && age < 21) {
             isAllowedToDrive = true;
             isAllowedToVote = true;
         } else {

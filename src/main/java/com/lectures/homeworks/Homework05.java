@@ -11,21 +11,21 @@ public class Homework05 {
     public static void main(String[] args) {
         Homework05 homework = new Homework05();
         // 1
-//        homework.replaceString();
+        homework.replaceString();
 
-//        // 2
-//        System.out.println(homework.areStringsEqual(homework.string01, "This is Test!"));
-//
-//        // 3
+        // 2
+        System.out.println(homework.areStringsEqual(homework.string01, "This is Test!"));
+
+        // 3
         System.out.println("Number of string words is: " + homework.getStringPartsCount());
-//
-//        // 4
-//        homework.concatStrings("String1", "String2");
-//
-//        // 5
-//        homework.getStringChar(0);
-//        homework.getStringChar(1);
-//        homework.getStringChar(4);
+
+        // 4
+        homework.concatStrings("String1", "String2");
+
+        // 5
+        homework.getStringChar(0);
+        homework.getStringChar(1);
+        homework.getStringChar(4);
 
     }
 
