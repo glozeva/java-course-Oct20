@@ -5,7 +5,7 @@ public class Homework05 {
     String string01 = "This is Test!";
     /*
     Reference string01 is Stack memory --> pointing to heap memory in String pool
-    that contains literal This is Test!
+    that contains literal This is Test!2
      */
 
     public static void main(String[] args) {
