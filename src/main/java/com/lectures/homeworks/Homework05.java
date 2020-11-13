@@ -52,7 +52,7 @@ public class Homework05 {
 
     private int getStringPartsCount() {
         String[] stringParts = string01.split(" ");
-        System.out.println(stringParts[0]);
+        System.out.println(stringParts[1]);
         return stringParts.length;
     }
 
