@@ -12,7 +12,10 @@ public class MainLecture08 {
         studentCourses.add("Programming");
 
         student.setCourses(studentCourses);
+        student.setFacultyNumber(5665);
         student.prepareForExam();
         student.levelOfEducation(EducationLevel.NO);
+
     }
+
 }

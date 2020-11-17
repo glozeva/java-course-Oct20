@@ -2,11 +2,15 @@ package com.lectures.lecture08;
 
 import java.util.List;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Getter
 @Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class Student extends Person{
     private String faculty;
     private String specialty;
@@ -38,7 +42,7 @@ public class Student extends Person{
     }
 
     public void prepareForExam(){
-        System.out.println("no preparation");
+        System.out.println("no preparation" + facultyNumber + specialty);
     }
 
     @Override

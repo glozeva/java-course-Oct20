@@ -1,5 +1,8 @@
 package com.lectures.lecture08;
 
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
 public abstract class Person {
     private String name;
     private int age;
