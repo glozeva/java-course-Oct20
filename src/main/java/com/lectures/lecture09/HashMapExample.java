@@ -15,7 +15,7 @@ public class HashMapExample {
 
         if(map.containsKey("Kiril")){
             Integer a = map.get("Kiril");
-            System.out.println("Kiril has value: " + a);
+            System.out.println("Kiril has value : " + a);
         }
 
         for(Map.Entry<String, Integer> map1: map.entrySet()){
