@@ -13,6 +13,9 @@ public class HashMapExample {
 
         System.out.println(map.size());
 
+        if(map.containsKey("Kiril")){
+            Integer a = map.get("Kiril");
+            System.out.println("Kiril has value : " + a);
         if(map.containsKey("Elena")){
             Integer a = map.get("Elena");
             System.out.println("Elena has value: " + a);
