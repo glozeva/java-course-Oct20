@@ -3,6 +3,9 @@ package com.lectures.lecture09;
 import java.util.HashMap;
 import java.util.Map;
 
+import lombok.extern.slf4j.Slf4j;
+
+@Slf4j
 public class HashMapExample {
 
     public static void main(String[] args) {
@@ -13,12 +16,13 @@ public class HashMapExample {
 
         System.out.println(map.size());
 
-        if(map.containsKey("Kiril")){
+        if(map.containsKey("Kiril")) {
             Integer a = map.get("Kiril");
-            System.out.println("Kiril has value : " + a);
+            log.info("Kiril has value: {}", a);
+        }
         if(map.containsKey("Elena")){
-            Integer a = map.get("Elena");
-            System.out.println("Elena has value: " + a);
+            Integer b = map.get("Elena");
+            log.warn("Elena has value: {}", b);
         }
 
         for(Map.Entry<String, Integer> map1: map.entrySet()){
