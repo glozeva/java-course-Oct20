@@ -10,7 +10,7 @@ import lombok.Getter;
 public class Person {
     private String name;
     private double money;
-    private List<Product> bagOfProducts;
+    private final List<Product> bagOfProducts;
 
     public Person(String name, double money) {
         setName(name);
@@ -43,6 +43,6 @@ public class Person {
 
     @Override
     public String toString() {
-        return String.format("%s - %s", this.name, this.bagOfProducts.size()==0 ? "Nothing bought" : this.bagOfProducts.stream().map(Product::getName).collect(Collectors.joining(", ")));
+        return String.format("%s - %s", this.name, this.bagOfProducts.isEmpty() ? "Nothing bought" : this.bagOfProducts.stream().map(Product::getName).collect(Collectors.joining(", ")));
     }
 }
